@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shsxt.server.dao.UserDao">
+    <select id="queryUserById" resultType="com.shsxt.api.po.User">
+        select id, user_name as uname ,user_pwd as upwd from t_user where id=#{id}
+    </select>
+</mapper>
